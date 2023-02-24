@@ -9,7 +9,6 @@
 }
 
 html {
-    background-color: rgb(251, 253, 253);
     font-family: "ralewaythin";
     
 }
@@ -22,10 +21,14 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(251, 253, 253);
+    background-color: rgb(255, 255, 255);
 }
 
-li, a, button {
+svg {
+    margin: 3px;
+}
+
+li, a {
     font-weight: 500;
     font-size: 16px;
     color: black;
@@ -36,8 +39,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
+
 }
 
 .name {
@@ -52,6 +57,7 @@ header {
 
 .topnav a {
     font-size: 24px;
+    font-weight: 500;
 }
 
 
@@ -68,10 +74,17 @@ img {
 .container {
     display: flex;
     flex-flow: center;
+    margin: 0 50px;
 }
 
 .quote {
     font-size: 32px;
     text-align: center;
     margin-top: 130px;
+}
+
+.box1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
