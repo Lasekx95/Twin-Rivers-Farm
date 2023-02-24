@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('fonts/raleway-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background-color: rgb(251, 253, 253);
+    font-family: "ralewaythin";
+    
+}
+
+body {
+    padding: 0 10%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 253, 253);
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.name {
+    cursor: pointer;
+}
+
+
+.topnav {
+    list-style: none;
+    display: flex;
+}
+
+.topnav a {
+    font-size: 24px;
+}
+
+
+.topnav li {
+    padding: 9px;
+    font-size: 24pt;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.container {
+    display: flex;
+    flex-flow: center;
+}
+
+.quote {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 130px;
+}
