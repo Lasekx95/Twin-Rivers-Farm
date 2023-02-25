@@ -77,6 +77,12 @@ img {
     margin: 0 50px;
 }
 
+.container1 {
+    display: flex;
+    flex-flow: center;
+    margin: 30px;
+}
+
 .quote {
     font-size: 32px;
     text-align: center;
@@ -86,6 +92,7 @@ img {
 
 li a:hover{
     background-color: rgb(43, 189, 226);
+    border-bottom: 4px solid rgb(117, 213, 252);
     border-radius: 7px;
     padding: 5px;
 }
@@ -95,10 +102,6 @@ li a:hover{
     border-color: rgb(117, 213, 252);
     border-bottom: 4px solid rgb(117, 213, 252);
     border-radius: 3px;
-}
-
-p {
-    max-width: 75%;
 }
 
 .box1 {
@@ -112,11 +115,28 @@ p {
     margin: auto;
 }
 
+.box3 {
+    display: block;
+    text-align: center;
+    max-width: 60%;
+}
+
 .tab {
     margin-left: 20%;
 }
 
 span {
-    color: rgb(117, 213, 252);;
+    color: rgb(117, 160, 252);;
     text-shadow: 2px;
+    border-bottom: 2px solid rgb(255, 0, 0);
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(117, 213, 252);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
