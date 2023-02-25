@@ -1,40 +1,82 @@
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/raleway-variablefont_wght-webfont.ttf') format('truetype');
+    font-family: 'share_techregular';
+    src: url('fonts/sharetech-regular-webfont.woff2') format('woff2'),
+         url('fonts/sharetech-regular-webfont.woff') format('woff'),
+         url('fonts/sharetech-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 
 html {
-    font-family: "ralewaythin";
+    font-family: "share_techregular";
     
 }
+
 
 body { 
     overflow:hidden;
     height:100vh;
     width:100vw;
-    background:#1d1e22;
-    --c1: #1d1e22;
-    --c2: #444857;
+    --c1: #52c3e6;
+    --c2: rgb(0, 0, 0);
     background-image: -webkit-linear-gradient(top, var(--c1), var(--c2));
     background-image: -moz-linear-gradient(top, var(--c1), var(--c2)));
     background-image: -o-linear-gradient(top, var(--c1), var(--c2)));
     background-image: -ms-linear-gradient(top, var(--c1), var(--c2)));
     background-image: linear-gradient(top, var(--c1), var(--c2)));
   }
-  
-.landing {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-}
 
 button {
     font-family: "ralewaythin";
     text-decoration: none;
 }
+
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+      align-items: center;
+}
+
+.button {
+    position: relative;
+    background-color: #97d7f5;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #1b2224;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #3252bb;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

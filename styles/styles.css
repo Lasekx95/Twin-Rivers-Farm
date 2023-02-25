@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/raleway-variablefont_wght-webfont.ttf') format('truetype');
+    font-family: 'share_techregular';
+    src: url('fonts/sharetech-regular-webfont.woff2') format('woff2'),
+         url('fonts/sharetech-regular-webfont.woff') format('woff'),
+         url('fonts/sharetech-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 
 html {
-    font-family: "ralewaythin";
+    font-family: "share_techregular";
     
 }
 
@@ -81,10 +81,42 @@ img {
     font-size: 32px;
     text-align: center;
     margin-top: 130px;
+    margin-left: 10px;
+}
+
+li a:hover{
+    background-color: rgb(43, 189, 226);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.active {
+
+    border-color: rgb(117, 213, 252);
+    border-bottom: 4px solid rgb(117, 213, 252);
+    border-radius: 3px;
+}
+
+p {
+    max-width: 75%;
 }
 
 .box1 {
     display: flex;
     justify-items: center;
     align-items: center;
+}
+
+.box2 {
+    display: inline;
+    margin: auto;
+}
+
+.tab {
+    margin-left: 20%;
+}
+
+span {
+    color: rgb(117, 213, 252);;
+    text-shadow: 2px;
 }
