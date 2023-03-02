@@ -43,11 +43,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: #ECF9FF;
     padding: 8px 32px;
-    border-bottom: inset 1px #AAE3E2;
-    box-shadow: 10px 10px 13px #AAE3E2;
-    
 }
 
 .hamburger {
@@ -125,10 +121,26 @@ footer {
     .menu a {
         text-decoration: none;
         color: black;
-        padding: 0 5px;
+        padding: 8px 16px;
+        font-weight: 300;
+        transition: 0.4s ease;
+        border-radius: 99px;
     }
 
+    .menu a.is-active {
+        border-bottom: 3px solid rgb(43, 189, 226);
+        border-radius: 0;
+        padding: auto;
+        transition: 0;
+    }
 
+    .menu a:hover {
+        background-color: rgb(43, 189, 226);
+        border-radius: 10px;
+        padding: auto;
+        transition: 0;
+        box-shadow: 5px 12px 19px -4px rgba(0,0,0,0.30)
+    }
 
 
   }
