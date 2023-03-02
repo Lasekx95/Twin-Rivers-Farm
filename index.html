@@ -5,77 +5,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/styles.css">
-        <script src="scripts/landing.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="scripts/menu.js" defer></script>
+        
     </head>
     <body>
-        <header>
-            <div class="box1">
-                <h1 class="name" class="blue">Dustin Demers</h1>
-                <svg width="48px" height="48px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" 
-                xmlns="http://www.w3.org/2000/svg" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)" 
-                stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), 
-                scale(1)"><path transform="translate(-2.4, -2.4), scale(1.7999999999999998)" 
-                fill="#7ed0ec" d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25
-                0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 
-                0 00-1.084-1.924L9.166.33z" strokewidth="0"></path></g><g id="SVGRepo_tracerCarrier" 
-                stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
-                <path d="M7 8L3 12L7 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" 
-                stroke-linejoin="round"></path> <path d="M17 8L21 12L17 16" stroke="#ffffff" stroke-width="2" 
-                stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 4L9.8589 19.4548" 
-                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path> </g></svg>
+        <nav>
+            <div class="container">
+                <h1>Dustin Demers</h1>
+                    <div class="menu">
+                        <a href="#" class="is-active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Github</a>
+                        <a href="#">Resume</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
             </div>
-            <nav>
-                <ul class="topnav">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
-            <img src="images/hero_image.png" alt="" height="400px" width="400px" class="blue">
-            <p class="quote">“If a man empties his purse into his head, no man can take it away from him. 
-                An investment in knowledge always pays the best interest.” 
-                <br><br>
-                - Benjamin Franklin</p>
-        </div>
-        <div>
-            
-            <section class="container1">
-                <section class="box3">
-                    <h2>About Myself</h2>
-                    <p>Growing up I was utterly fascinated by these worlds created within video games, the stories and how the characters
-                    were not just relatable but also the emotions and feelings they conveyed. Fast forward to Highschool, I found myself 
-                    creating a variety of websites that ranged from clan forums to editorial sites for these very games. Now that I've grown in years
-                    I made the decision to attend the British Columbia Institute of Technology where I'm currently working towards gaining the 
-                    credentials and prerequisites I need to apply for the the B-tech program which they offer, to establish a career as a fullstack developer.
-                    </p>
-                </section>
-                <section class="box2">
-                    <h3>(function repeat() {<br>
-                    </h3>
-                    <h3 class="tab">
-                        eat();<br>
-                        sleep():<br>
-                        coffee();<br>
-                        <span class="auto-type"></span> <br/>
-                        repeat();
-                    </h3>
-                    <h3>})();</h3>
-                </section>
-                    <script>
-                        var typed = new Typed(".auto-type", {
-                            strings: ["code();", "game();", "fixBugs();", "anime();", "codeAgain();"],
-                            typeSpeed: 150,
-                            backSpeed: 150,
-                            loop: true
-                        })
-                    </script>
-                </section>
-        </div>
+        </nav>
+
 
         <footer>
             Dustin Demers 2023&#169;
