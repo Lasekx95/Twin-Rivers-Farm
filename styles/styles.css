@@ -119,7 +119,7 @@ footer {
     .menu {
         display: block;
         font-size: 20px;
-
+        margin: 0 -16px;
     }
 
     .menu a {
@@ -127,6 +127,8 @@ footer {
         color: black;
         padding: 0 5px;
     }
+
+
 
 
   }
