@@ -142,7 +142,9 @@ footer {
         box-shadow: 5px 12px 19px -4px rgba(0,0,0,0.30)
     }
 
-
+    .mobile-menu {
+        display: none;
+    }
   }
 
   
