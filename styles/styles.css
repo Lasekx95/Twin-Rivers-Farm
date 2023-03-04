@@ -69,7 +69,7 @@ svg {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #8EDEAF;
+    background-color: #8ed2de;
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 20px;
@@ -77,12 +77,12 @@ svg {
 
 .hamburger:hover .bar {
     transform: translateX(10px);
-    background-color: #8EDEAF;
+    background-color: #8ed2de;
 }
 
 .hamburger.is-active:before {
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: #8EDEAF;
+    background-color: #8ed2de;
 }
 
 .hamburger.is-active .bar {
@@ -91,7 +91,7 @@ svg {
 
 .hamburger.is-active:after {
     transform: rotate(45deg) translate(-9px, -7px);
-    background-color: #8EDEAF;
+    background-color: #8ed2de;
 }
 
 .menu {
@@ -109,7 +109,7 @@ svg {
 
 .burger-menu a {
     text-decoration: none;
-    color: #8EDEAF;
+    color: #8ed2de;
     padding: 8px 16px;
     font-weight: 500;
     transition: 0.4s ease;
@@ -138,7 +138,7 @@ svg {
 .mobile-nav a {
     text-decoration: none;
     text-align: center;
-    color: #8EDEAF;
+    color: #8ed2de;
     font-size: 20px;
     width: 100%;
     max-width: 200px;
@@ -150,7 +150,7 @@ svg {
 }
 
 .mobile-nav a:hover {
-    background-color: #8dcccb;
+    background-color: #8ed2de;
     border-radius: 10px;
     padding: auto;
     transition: 0;
@@ -165,7 +165,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #2F3453;
-    color: #8EDEAF;
+    color: #8ed2de;
     text-align: center;
   }
 
@@ -193,7 +193,7 @@ h3 {
 }
 
 section span {
-    color: #8EDEAF;
+    color: #8ed2de;
 }
 
 /*  Main  */
@@ -204,7 +204,7 @@ section span {
 }
 
 h4 {
-    color: #8EDEAF;
+    color: #8ed2de;
     padding-left: 2px;
 }
 
@@ -228,7 +228,7 @@ p {
 
 .home-a:hover {
     transition: 8s ease;
-    color: #8EDEAF;
+    color: #8ed2de;
     text-decoration: underline;
 }
 
@@ -246,7 +246,7 @@ p {
     display: block;
     width: 80%;
     height: 2px;
-    background-color: #8EDEAF;
+    background-color: #8ed2de;
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 20px;
@@ -270,7 +270,7 @@ ul li {
 
 ul li::before {
     content: "";
-    border-color: transparent #8EDEAF;
+    border-color: transparent #8ed2de;
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: block;
@@ -285,7 +285,7 @@ ul li::before {
     max-width: 40%;
     height: auto;
     border-radius: 1px;
-    box-shadow: 0.5rem 0.5rem #8EDEAF, -0.5rem -0.5rem rgb(177, 180, 206);
+    box-shadow: 0.5rem 0.5rem #8ed2de, -0.5rem -0.5rem rgb(177, 180, 206);
 }
 
 .center {
@@ -313,7 +313,7 @@ ul li::before {
     .menu a {
         text-decoration: none;
         font-size: 16px;
-        color: #8EDEAF;
+        color: #8ed2de;
         padding: 8px 10px;
         transition: 0.4s ease;
         border-radius: 99px;
