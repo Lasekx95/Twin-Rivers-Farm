@@ -13,56 +13,106 @@
         <header>
             <nav>
                 <div class="container">
-                    <h1>Dustin Demers</h1>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 10L6 12L8 14" stroke="#8EDEAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 10L18 12L16 14" stroke="#8EDEAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#8EDEAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13 9.66992L11 14.33" stroke="#8EDEAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         <div class="menu">
-                            <a href="index.html" class="is-active">Home</a>
-                            <a href="about.html">About</a>
-                            <a href="#">Github</a>
+                            <a href="index.html" class="is-active">01.About</a>
+                            <a href="#">02.Education</a>
+                            <a href="#">03.Projects</a>
+                            <a href="#">04.Contact</a>
                             <a href="#">Resume</a>
-                            <a href="contact.html">Contact</a>
                         </div>
                         <button class="hamburger">
                             <div class="bar"> </div>
                         </button>
                 </div>
             </nav>
-        </header>
+        </header> 
             <nav class="mobile-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Github</a>
+                <a href="index.html">01. About</a>
+                <a href="#">02. Education</a>
+                <a href="#">03. Projects</a>
+                <a href="#">04. Contact</a>
                 <a href="#">Resume</a>
-                <a href="contact.html">Contact</a>
             </nav>
             <main>
             <div style="padding-top: 60px;"></div>
-            <div class="code-div scroll-bg">
-                <section class="code">
-                    <h3>(function repeat() {<br>
-                    </h3>
-                    <h3 class="tab">
-                        eat();<br>
-                        sleep():<br>
-                        coffee();<br>
-                        <span class="auto-type"></span> <br/>
-                        repeat();
-                    </h3>
-                    <h3>})();</h3>
-                </section>
-                    <script>
-                        var typed = new Typed(".auto-type", {
-                            strings: ["code();", "game();", "fixBugs();", "anime();", "codeAgain();"],
-                            typeSpeed: 150,
-                            backSpeed: 150,
-                            loop: true
-                        })
-                    </script>
-                </section>
-            </div>
+            <section class="box">
+                <h4>Hi, my name is</h4>
+                <h1>Dustin Demers</h1>
+                <h1 style="color: rgb(177, 180, 206);">I build things for the web.</h1>
+                <p>I'm a computer science student, currently enrolled at the 
+                    <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a>.
+                With a passion for design and developement, I create web applications, websites, games and software applications.
+                <br> <br>
+                Currently enrolled in the <a href="https://www.bcit.ca/programs/computer-systems-certificate-part-time-5500cert/?gclid=Cj0KCQiA0oagBhDHARIsAI-BbgdlG2MJgMXyxASTUECwXcgPph-Ur58II3pqTtxMZwxa5aOGe7iIHDEaAsyeEALw_wcB&gclsrc=aw.ds" class="home-a">Computer Systems Certificate</a>
+                part-time program, I'm planning on returning to university full-time to specalize in full-stack web developement and web technologies
+                </p>
+                <div class="code-div">
+                    <section class="code">
+                        <h3>(function repeat() {<br>
+                        </h3>
+                        <h3 class="tab">
+                            eat();<br>
+                            sleep():<br>
+                            coffee();<br>
+                            <span class="auto-type"></span> <br/>
+                            repeat();
+                        </h3>
+                        <h3>})();</h3>
+                    </section>
+                        <script>
+                            var typed = new Typed(".auto-type", {
+                                strings: ["code();", "game();", "fixBugs();", "anime();", "codeAgain();"],
+                                typeSpeed: 150,
+                                backSpeed: 150,
+                                loop: true
+                            })
+                        </script>
+                    </section>
+                </div>
+
+                <div class="tittle-margin"></div>
+            </section>
+            <section class="box">
+                <div class="rev-title">
+                    <span class="title-bar"></span>
+                    <h4 class=".rev-title-h3">01. About</h4>
+                </div>
+                <p>Hey! My name is Dustin and I enjoy creating things that live on the internet. 
+                My interest in web development started back in 2010 when I decided to try to create clan websites and a few editorial
+                websites for videogame reviews, turned out I really enjoyed designing these sites and learnt a fair bit about HTML, CSS, and design principles</p>
+                <br> <br>
+                <p>Fast-forward to today, and I have the oppurtunity to attend classes at <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a>.
+                My focus these days is on my studies, but I make an effort to attend various events ranging from meet ups to hackathons, though working full-time
+                on top of my schooling can cause some scheduling conflicts. I'm also one of the co-founders
+                and current Vice President of the BCIT Dev Hub.
+                <br> <br>
+                Here are a few technologies I've been working with recently:
+                </p>
+                <div style="display: flex">
+                    <ul>
+                        <li>Tailwind CSS</li>
+                        <li>Next.JS</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+                    <ul>
+                        <li>Typescript</li>
+                        <li>Python</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <img src="images/dustin.jpg" alt="" class="bg-color" >
+                </div>
+
+            </section>
+        
         </div>
             </main>
         <footer>
             Dustin Demers 2023&#169;
+            <br>
+        created with HTML, CSS, and JS
         </footer>
     </body>
 </html>
