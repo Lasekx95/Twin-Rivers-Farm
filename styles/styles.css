@@ -40,6 +40,7 @@ nav {
     right: 0;
     z-index: 99;
     padding: 8px 32px;
+    font-weight: 600;
 }
 
 svg {
@@ -118,6 +119,7 @@ svg {
     display: flex;
     flex-direction: column;
     position: fixed;
+    font-weight: 600;
     top: 0;
     left: 100%;
     width: 100%;
@@ -203,6 +205,7 @@ section span {
 
 h4 {
     color: #8EDEAF;
+    padding-left: 2px;
 }
 
 h1 {
