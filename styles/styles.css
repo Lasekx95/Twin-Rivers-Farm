@@ -159,7 +159,6 @@ svg {
 
  /* footer "duh.." */
 footer {
-    position: fixed;
     font-size: 12px;
     left: 0;
     bottom: 0;
@@ -301,6 +300,12 @@ ul li::before {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+
 
   @media (min-width: 768px) {
     .hamburger {
