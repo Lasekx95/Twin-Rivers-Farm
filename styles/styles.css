@@ -104,14 +104,14 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    font-weight: 900;
 }
 
 .burger-menu a {
     text-decoration: none;
     color: #8ed2de;
     padding: 8px 16px;
-    font-weight: 500;
+    font-weight: 900;
     transition: 0.4s ease;
 }
 
@@ -119,7 +119,7 @@ svg {
     display: flex;
     flex-direction: column;
     position: fixed;
-    font-weight: 600;
+    font-weight: 900;
     top: 0;
     left: 100%;
     width: 100%;
@@ -144,7 +144,7 @@ svg {
     max-width: 200px;
     padding: 12px 16px;
     margin: 0 auto 16px;
-    font-weight: 300;
+    font-weight: 900;
     transition: 0.4s ease;
     font-weight: -600;
 }
@@ -199,7 +199,9 @@ section span {
 /*  Main  */
 
 .box {
-    margin: 9px 15px;
+    margin: 35px;
+    margin-left: 9%;
+    margin-right: 12%;
     display: block;
 }
 
@@ -213,10 +215,14 @@ h1 {
     letter-spacing: px;
     line-height: 1;
     font-size: 36px;
+    font-weight: 900;
+    margin: 15px 0px;
+
 }
 
+
 p {
-    line-height: 1.2;
+    line-height: 1.6;
     color: rgb(177, 180, 206);
     font-weight: 600;
 }
@@ -254,7 +260,7 @@ p {
 }
 
 .tittle-margin {
-    margin: 30px;
+    margin-top: 60px;
 }
 
 ul {
@@ -266,6 +272,7 @@ ul {
 ul li {
     list-style: none;
     color: rgb(177, 180, 206);
+    font-weight: 600;
 }
 
 ul li::before {
@@ -337,8 +344,14 @@ ul li::before {
     }
 
     .box {
-        margin-left: 90px;
-        margin-right: 30%
+        margin-left: 15%;
+        margin-right: 30%;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-weight: 900;
+        margin: 15px 0px;
     }
 
     p {

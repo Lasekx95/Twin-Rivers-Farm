@@ -21,8 +21,8 @@
                         stroke-linecap="round" stroke-linejoin="round"></path> 
                         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13 9.66992L11 14.33" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         <div class="menu">
-                            <a href="index.html">01.About</a>
-                            <a href="#">02.Education</a>
+                            <a href="#section-1">01.About</a>
+                            <a href="#section-2">02.Education</a>
                             <a href="#">03.Projects</a>
                             <a href="#">04.Contact</a>
                             <a href="#">Resume</a>
@@ -41,7 +41,7 @@
                 <a href="#">Resume</a>
             </nav>
             <main>
-            <div style="padding-top: 60px;"></div>
+            <div style="padding-top: 60px;" id="section-1"></div>
             <section class="box">
                 <h4>Hi, my name is</h4>
                 <h1>Dustin Demers</h1>
@@ -84,14 +84,14 @@
                     <span class="title-bar"></span>
                     <h4 class=".rev-title-h3">01. About</h4>
                 </div>
-                <p>Hey! My name is Dustin and I enjoy creating things that live on the internet. 
+                <p id="section-1">Hey! My name is Dustin and I enjoy creating things that live on the internet. 
                 My interest in web development started back in 2010 when I decided to try to create clan websites and a few editorial
                 websites for videogame reviews, turned out I really enjoyed designing these sites and learnt a fair bit about HTML, CSS, and design principles</p>
                 <br> <br>
                 <p>Fast-forward to today, and I have the oppurtunity to attend classes at <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a>.
                 My focus these days is on my studies, but I make an effort to attend various events ranging from meet ups to hackathons, though working full-time
                 on top of my schooling can cause some scheduling conflicts. I'm also one of the co-founders
-                and current Vice President of the BCIT Dev Hub.
+                and current Vice President of <a href="https://discord.gg/Fz4aRatb47" class="home-a">BCIT Dev Hub</a>.
                 <br> <br>
                 Here are a few technologies I've been working with recently:
                 </p>
@@ -107,13 +107,41 @@
                         <li>React</li>
                     </ul>
                 </div>
-                <div class="center">
+                <div class="center" style="margin-top: 40px;">
                     <img src="images/dustin.jpg" alt="" class="bg-color" >
                 </div>
-
             </section>
-        
         </div>
+            <div class="tittle-margin"></div>
+        <section class="box">
+            <div class="rev-title" id="section-2">
+                <span class="title-bar"></span>
+                <h4 class=".rev-title-h3">02. My experience</h4>
+            </div>
+            <p> A ton of my experience is relevent to warehousing and logistics but over the years I've learnt quite a few skills and I've been 
+                using them during the hackathons, school projects, studying, and personal projects I've been working on, such as: 
+            </p>
+            <br>
+            <div style="display: flex">
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Excellent Organisation</li>
+                </ul>
+                <ul>
+                    <li>Attention to Detail</li>
+                    <li>Collaborating</li>
+                    <li>Adaptable</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <p> Though I have worked on a few projects, one of those most notable being <a href="https://github.com/Lasekx95/QDS2023" class="home-a">A fuel consumption tracker</a>
+                for TECK Resources created at the <a href="https://qds-hacks-2023.devpost.com/" class="home-a">QDS2023 Hackathon</a>. Created with Next.js and a Django backend.
+                I worked primarily on the front-end and designing the overall concept of the app, with some help from my amazing team-mates! Unfortunately, as of right now the app 
+                does lack functionality but we hope to update it soon!
+            </p>
+        </section>
             </main>
         <footer>
             Dustin Demers 2023&#169;
