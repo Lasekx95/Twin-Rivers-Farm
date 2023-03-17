@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <script src="scripts/menu.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     </head>
     <body>
         <header>
@@ -20,8 +21,8 @@
                         stroke-linecap="round" stroke-linejoin="round"></path> 
                         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13 9.66992L11 14.33" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         <div class="menu">
-                            <a href="#section-1">01.About</a>
-                            <a href="#section-2">02.Education</a>
+                            <a href="#section-1">01. About</a>
+                            <a href="#section-2">02. Experience</a>
                             <a href="#">03.Projects</a>
                             <a href="#">04.Contact</a>
                             <a href="#">Resume</a>
@@ -34,7 +35,7 @@
         </header> 
             <nav class="mobile-nav">
                 <a href="index.html">01. About</a>
-                <a href="#">02. Education</a>
+                <a href="#">02. Experience</a>
                 <a href="#">03. Projects</a>
                 <a href="#">04. Contact</a>
                 <a href="#">Resume</a>
@@ -95,12 +96,12 @@
                 Here are a few technologies I've been working with recently:
                 </p>
                 <div style="display: flex">
-                    <ul>
+                    <ul class="ul1">
                         <li>Tailwind CSS</li>
                         <li>Next.JS</li>
                         <li>JavaScript (ES6+)</li>
                     </ul>
-                    <ul>
+                    <ul class="ul1">
                         <li>Typescript</li>
                         <li>Python</li>
                         <li>React</li>
@@ -122,12 +123,12 @@
             </p>
             <br>
             <div style="display: flex; margin-left: 36px; ">
-                <ul>
+                <ul class="ul1">
                     <li>Problem Solving</li>
                     <li>Time Management</li>
                     <li>Excellent Organisation</li>
                 </ul>
-                <ul>
+                <ul class="ul1">
                     <li>Attention to Detail</li>
                     <li>Collaborating</li>
                     <li>Adaptable</li>
@@ -135,11 +136,72 @@
             </div>
             <br>
             <br>
-            <p> Though I have worked on a few projects, one of those most notable being <a href="https://github.com/Lasekx95/QDS2023" class="home-a">A fuel consumption tracker</a>
-                for TECK Resources created at the <a href="https://qds-hacks-2023.devpost.com/" class="home-a">QDS2023 Hackathon</a>. Created with Next.js and a Django backend.
-                I worked primarily on the front-end and designing the overall concept of the app, with some help from my amazing team-mates! Unfortunately, as of right now the app 
-                does lack functionality but we hope to update it soon!
-            </p>
+
+            <style>
+                swiper-container {
+                  width: 100%;
+                  height: 100%;
+                }
+            
+                swiper-slide {
+                  text-align: center;
+                  font-size: 16px;
+                  margin-top: 8px;
+                  display: block;
+                  justify-content: center;
+                  align-items: center;
+                  color: rgb(177, 180, 206);
+                  padding: 6px 35px;
+                }
+            
+                swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              </style>
+            
+              <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+                <swiper-slide> 
+                    <h3>Aecon Technical</h3>
+                    <h4>Warehouse Associate</h4>
+                    <h4>Dec 2023 - Present</h4>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                          Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <h3>Wood Wyantt</h3>
+                    <h4>Warehouse Associate</h4>
+                    <h4>Nov 2022 - Dec 2022</h4>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                         remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                          Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </swiper-slide>
+                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide>
+                <swiper-slide>Slide 5</swiper-slide>
+                <swiper-slide>Slide 6</swiper-slide>
+                <swiper-slide>Slide 7</swiper-slide>
+                <swiper-slide>Slide 8</swiper-slide>
+                <swiper-slide>Slide 9</swiper-slide>
+              </swiper-container>
+            
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+            
+
+
         </section>
 
             </main>

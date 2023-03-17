@@ -23,7 +23,6 @@
 }
 
 
-
 /* Nav Styling */
 .container {
     max-width: 1280px;
@@ -262,19 +261,19 @@ p {
     margin-top: 60px;
 }
 
-ul {
+.ul1 {
     display: block;
     margin: auto;
     padding-top: 10px;
 }
 
-ul li {
+.ul1 li {
     list-style: none;
     color: rgb(177, 180, 206);
     font-weight: 600;
 }
 
-ul li::before {
+.ul1 li::before {
     content: "";
     border-color: transparent #8ed2de;
     border-style: solid;
@@ -288,11 +287,26 @@ ul li::before {
   }
 
   img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 1px;
-    box-shadow: 0.5rem 0.5rem #8ed2de, -0.5rem -0.5rem rgb(177, 180, 206);
-}
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #8ed2de; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+  
+  img + img {
+    border-radius: 50%;
+  }
 
 .center {
     margin-top: 30px;
