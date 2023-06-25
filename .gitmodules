@@ -1,0 +1,3 @@
+[submodule "chrome-dino-game"]
+	path = chrome-dino-game
+	url = https://github.com/Lasekx95/chrome-dino-game.git
