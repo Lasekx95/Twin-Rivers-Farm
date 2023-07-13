@@ -28,15 +28,25 @@ $(document).ready(function()
         }
     });
 });
-//turn on to make the photo follow mouse
-// $(document).ready(function()
-// {
-//     $(document).mousemove(function( event ) 
-//     {
-//         var docWidth = $(document).width();
-//         var docHeight = $(document).height();
-//         var xValue = (event.clientX/docWidth)*100;
-//         var yValue = (event.clientY/docHeight)*100;
-//         $('.photo').css('background-position', xValue+'%,'+yValue+'%');
-//     });
-// });
+
+
+const form = document.querySelector('.email-form');
+const emailInput = document.getElementById('email');
+
+form.addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+  // Get the entered email value
+  const emailValue = emailInput.value.trim();
+
+  // Validate the email using a regular expression
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailValue)) {
+    // Display an error message if the email is not valid
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  form.submit();
+});
