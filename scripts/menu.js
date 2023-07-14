@@ -6,9 +6,8 @@ menu_btn.addEventListener("click", function() {
     mobile_menu.classList.toggle("is-active");
 });
 
-$(document).ready(function()
-{
-    $('.contact').click(function (e) 
+
+$('.contact').click(function (e) 
     {
         $('.card').toggleClass('active');
         $('.banner').toggleClass('active');
@@ -27,7 +26,12 @@ $(document).ready(function()
             $('button.contact#main-button').text(buttonText);
         }
     });
-});
+    
+
+      // Close mobile nav on link click
+      $('.mobile-nav a').click(function() {
+        mobile_menu.classList.toggle("is-active");
+      });
 
 
 const form = document.querySelector('.email-form');

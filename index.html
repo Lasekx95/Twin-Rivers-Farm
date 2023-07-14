@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+        <script scr="https://smtpjs.com/v3/smtp.js" defer></script>
         <script src="scripts/menu.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
@@ -34,11 +35,11 @@
                 </div>
             </nav>
         </header> 
-            <nav class="mobile-nav">
-                <a href="#section-1">01. About</a>
-                <a href="#section-2">02. Experience</a>
+            <nav class="mobile-nav" id="mobile-nav">
+                <a href="#section-1" id="na1v">01. About</a>
+                <a href="#section-2" id="nav2">02. Experience</a>
                 <a href="game/game.html">03. Project - Bunny Game</a>
-                <a href="#contact">04. Contact</a>
+                <a href="#contact" id="nav3">04. Contact</a>
                 <a href="#">Resume</a>
             </nav>
             <main>
@@ -131,7 +132,7 @@
                 <ul class="ul1">
                     <li>Problem Solving</li>
                     <li>Time Management</li>
-                    <li>Organisation & Planning</li>
+                    <li>Planning</li>
                 </ul>
                 <ul class="ul1">
                     <li>Attention to Detail</li>
@@ -259,7 +260,7 @@
                 </ul>
                 <button class="contact" id="main-button">click to get in touch</button>
 
-              <form class="email-form">
+              <form class="email-form" onsubmit="sendEmail(), reset(); return false">
                     <input id="name" type="text" placeholder="name">
                     <input id="email" type="text" placeholder="email">
                     <textarea id="comment" type="text" placeholder="comment"></textarea>
