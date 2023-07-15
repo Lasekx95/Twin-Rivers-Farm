@@ -260,7 +260,7 @@
                 </ul>
                 <button class="contact" id="main-button">click to get in touch</button>
 
-              <form class="email-form" onsubmit="sendEmail(), reset(); return false">
+              <form class="email-form" method="post" action="contact-form-handler.php">
                     <input id="name" type="text" placeholder="name">
                     <input id="email" type="text" placeholder="email">
                     <textarea id="comment" type="text" placeholder="comment"></textarea>
