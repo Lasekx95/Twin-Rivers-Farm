@@ -20,10 +20,10 @@ class Particle {
     }
 
     move() {
-        if (this.coordinates.x >= canvas.width || this.coordinates.x <= 0) {
+        if (this.coordinates.x >= canvas.width || this.coordinates.x <= 1) {
             this.speedX = -this.speedX;
         }
-        if (this.coordinates.y >= canvas.height || this.coordinates.y <= 0) {
+        if (this.coordinates.y >= canvas.height || this.coordinates.y <= 1) {
             this.speedY = -this.speedY;
         }
     
@@ -59,10 +59,10 @@ function setDimensions() {
 
     // Adjust particle count based on screen dimensions
     //let particleTotal = 150;
-    let particleTotal = canvas.width <= 600 ? 130 : 150;
+    let particleTotal = w <= 600 ? 200 : 150;
     
     if(canvas.width > 500 && canvas.height > 1000){
-        ctx.lineWidth = 4; 
+        ctx.lineWidth = 3; 
     } else {
         ctx.lineWidth = .5;
     }
