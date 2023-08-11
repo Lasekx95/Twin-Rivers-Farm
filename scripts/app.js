@@ -18,22 +18,22 @@ window.addEventListener('resize', setDimensions);
 function setup(){
     setTimeout(() =>{
         progressBar.style.height = '40%'
-    }, 2000)
+    }, 1000)
 
     setTimeout(() =>{
         progressBar.style.height = '80%'
-    }, 4000)
+    }, 2000)
 
     setTimeout(() =>{
         progressBar.style.height = '100%'
-    }, 5000)
+    }, 3000)
     setTimeout(() =>{
         splashLeft.classList.add('active');
         splashRight.classList.add('active');
         progressBar.classList.add('complete');
         splashScreen.classList.add('complete');
         loading = false;       
-    }, 6000)
+    }, 4000)
 }
 
 function percentageTracker() {
