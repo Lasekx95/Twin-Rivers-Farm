@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d');
 let particles = [];
 let randomMaxSpeed = 2;
 
+
 class Particle {
     constructor() {
         this.reset();
@@ -25,7 +26,7 @@ class Particle {
         if (this.coordinates.y >= canvas.height || this.coordinates.y <= 0) {
             this.speedY = -this.speedY;
         }
-
+    
         for (let i = 0; i < particles.length; i++) {
             let { x, y } = this.coordinates;
             if (Math.abs(x - particles[i].coordinates.x) <= 200 && Math.abs(y - particles[i].coordinates.y) <= 200) {
@@ -33,12 +34,17 @@ class Particle {
                 ctx.beginPath();
                 ctx.moveTo(x, y);
                 ctx.lineTo(particles[i].coordinates.x, particles[i].coordinates.y);
+                
+                // Increase the line width for better visibility
+                ctx.lineWidth = 2; // You can adjust this value as needed
+                
                 ctx.stroke();
             }
         }
         this.coordinates.x += this.speedX;
         this.coordinates.y += this.speedY;
     }
+    
 }
 
 function setDimensions() {
@@ -54,7 +60,7 @@ function setDimensions() {
     let h = window.innerHeight;
 
     // Adjust particle count based on screen dimensions
-    let particleTotal = w > h ? (w > 1000 ? 150 : 100) : (h > 1000 ? 150 : 100);
+    let particleTotal = w > h ? (w > 1000 ? 150 : 100) : (h > 1000 ? 150 : 200);
 
     for (let i = 0; i < particleTotal; i++) {
         let particle = new Particle();
