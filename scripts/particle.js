@@ -47,8 +47,8 @@ function setDimensions() {
     canvas.height = window.innerHeight * window.devicePixelRatio;
 
     // CSS to make the canvas cover the entire viewport
-    canvas.style.width = '100vw';
-    canvas.style.height = '100vh';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
 
     let w = window.innerWidth;
     let particleTotal = w > 1000 ? 150 : 100;
