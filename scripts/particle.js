@@ -29,7 +29,7 @@ class Particle {
     
         for (let i = 0; i < particles.length; i++) {
             let { x, y } = this.coordinates;
-            if (Math.abs(x - particles[i].coordinates.x) <= 200 && Math.abs(y - particles[i].coordinates.y) <= 200) {
+            if (Math.abs(x - particles[i].coordinates.x) <= 250 && Math.abs(y - particles[i].coordinates.y) <= 250) {
                 ctx.strokeStyle = '#03c0ff25';
                 ctx.beginPath();
                 ctx.moveTo(x, y);
@@ -58,12 +58,13 @@ function setDimensions() {
     let h = window.innerHeight;
 
     // Adjust particle count based on screen dimensions
-    let particleTotal = w > h ? (w > 1000 ? 150 : 150) : (h > 1000 ? 250 : 250);
+    //let particleTotal = 150;
+    let particleTotal = canvas.width <= 600 ? 130 : 150;
     
     if(canvas.width > 500 && canvas.height > 1000){
-        ctx.lineWidth = 3; 
+        ctx.lineWidth = 4; 
     } else {
-        ctx.lineWidth = 1;
+        ctx.lineWidth = .5;
     }
 
     for (let i = 0; i < particleTotal; i++) {
