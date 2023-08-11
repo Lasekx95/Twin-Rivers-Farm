@@ -20,10 +20,10 @@ class Particle {
     }
 
     move() {
-        if (this.coordinates.x >= canvas.width || this.coordinates.x <= 1) {
+        if (this.coordinates.x >= canvas.width || this.coordinates.x <= 0) {
             this.speedX = -this.speedX;
         }
-        if (this.coordinates.y >= canvas.height || this.coordinates.y <= 1) {
+        if (this.coordinates.y >= canvas.height || this.coordinates.y <= 0) {
             this.speedY = -this.speedY;
         }
     
