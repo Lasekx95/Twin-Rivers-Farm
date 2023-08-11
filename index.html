@@ -5,285 +5,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/styles.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
-        <script scr="https://smtpjs.com/v3/smtp.js" defer></script>
-        <script src="scripts/menu.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <script type="module" src="scripts/app.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="container">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" 
-                        stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 10L6 12L8 14" 
-                            stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                        </path> <path d="M16 10L18 12L16 14" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" 
-                        stroke-linecap="round" stroke-linejoin="round"></path> 
-                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13 9.66992L11 14.33" stroke="#8ed2de" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                        <div class="menu">
-                            <a href="#section-1">01. About</a>
-                            <a href="#section-2">02. Experience</a>
-                            <a href="game/game.html">03.Project - Bunny Game</a>
-                            <a href="#contact">04.Contact</a>
-                            <a href="Dustin_Demers_Resume.pdf">Resume</a>
-                        </div>
-                        <button class="hamburger">
-                            <div class="bar"> </div>
-                        </button>
-                </div>
-            </nav>
-        </header> 
-            <nav class="mobile-nav" id="mobile-nav">
-                <a href="#section-1" id="na1v">01. About</a>
-                <a href="#section-2" id="nav2">02. Experience</a>
-                <a href="game/game.html">03. Project - Bunny Game</a>
-                <a href="#contact" id="nav3">04. Contact</a>
-                <a href="Dustin_Demers_Resume.pdf">Resume</a>
-            </nav>
-            <main>
-            <div style="padding-top: 60px;" id="section-1"></div>
-            <section class="box">
-                <h4>Hi, my name is</h4>
-                <h1>Dustin Demers</h1>
-                <h1 style="color: rgb(177, 180, 206);">I build things for the web.</h1>
-                <div class="code-div">
-                    <section class="code">
-                        <h3><span style="color: yellow">(</span> <span style="margin-left: -5px;">function</span> repeat <span style="margin-left: -9px; color: rgb(255, 0, 255)">() {</span><br>
-                        </h3>
-                        <h3 class="tab">
-                            eat <span style="margin-left: -5px; color: rgb(0, 162, 255)">()</span>;<br>
-                            sleep<span style="color: rgb(0, 162, 255)">()</span>;<br>
-                            coffee<span style="color: rgb(0, 162, 255)">()</span>;<br>
-                            <span class="auto-type"></span> <br/>
-                            repeat<span style="color: rgb(0, 162, 255)">()</span>;
-                        </h3>
-                        <h3><span style="color: rgb(255, 0, 255)">}</span><span style="color: yellow">)()</span>;</h3>
-                    </section>
-                        <script>
-                            var typed = new Typed(".auto-type", {
-                                strings: ["code();", "game();", "fixBugs();", "anime();", "codeAgain();"],
-                                typeSpeed: 150,
-                                backSpeed: 150,
-                                loop: true
-                            })
-                        </script>
-                    </section>
-                </div>
-
-                <div class="tittle-margin"></div>
-            </section>
-            <section class="box">
-                <div class="rev-title">
-                    <span class="title-bar"></span>
-                    <h4 class=".rev-title-h3" id="section-1">01. About</h4>
-                </div>
-                <p>
-                    I'm a results-driven part-time computer science student at the <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a>
-                    with a passion for leveraging technology to drive innovation. I'm eager to transition into a full-time 
-                    role where I can apply my technical expertise, collaborate with experienced professionals, and 
-                    continuously enhance my skills!
-                    <br><br>
-                    Currently enrolled in the <a href="https://www.bcit.ca/programs/computer-systems-certificate-part-time-5500cert/?gclid=Cj0KCQiA0oagBhDHARIsAI-BbgdlG2MJgMXyxASTUECwXcgPph-Ur58II3pqTtxMZwxa5aOGe7iIHDEaAsyeEALw_wcB&gclsrc=aw.ds" class="home-a">Computer Systems Certificate</a>
-                    part-time program, I've been continuously studying while managing my time as both a part-time student and a full-time employee. 
-                    
-                    <br><br>
-
-                    I'm currently working towards meeting the entry requirements to apply for and attend the 
-                    BSc program at the <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a> for computer science.
-                
-                    <br><br>
-
-                    My current tech stack is:
-
-                </p>
-                <div id="section-1" style="display: flex">
-                    <ul class="ul1">
-                        <li>Tailwind CSS</li>
-                        <li>Next.JS</li>
-                        <li>JavaScript (ES6+)</li>
-                    </ul>
-                    <ul class="ul1">
-                        <li>Typescript</li>
-                        <li>Python</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div class="center" style="margin-top: 40px;">
-                    <img src="images/dustin.jpg" alt="" class="bg-color" >
-                </div>
-            </section>
+        <div class="splash_screen">
+            <div class="left"></div>
+            <div class="right">
+                <h1 class="percentage">0%</h1>
+            </div>
+            <div class="progress_bar"></div>
         </div>
-            <div class="tittle-margin"></div>
-        <section class="box">
-            <div class="rev-title" id="section-2">
-                <span class="title-bar"></span>
-                <h4 class=".rev-title-h3">02. My experience</h4>
+
+
+        <section class="hero">
+            <header>
+                <div class="container">
+                    <h3></h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <canvas class="hero_canvas"></canvas>
+            <div class="main_title">
+                <div class="hero_text">
+                    <h1>Dustin Demers</h1>
+                    <div class="sub_title">
+                        <h2>Web Developement</h2>
+                        <h2>Explore & Design</h2>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="desc">
+                        <p>agagadg</p>
+                    </div>
+                </div>
             </div>
-            <p> 
-                The majority of my professional experience comes from a background in logistics, which 
-                has helped me as I've been progressing through a career change and my education at <a href="https://www.bcit.ca/" class="home-a">British Columbia Institute of Technology</a>.
-                Fortunately a lot of the skills I've gained over the years have been transferrable to my education and 
-                have helped me with recent projects I've undertaken, such as:
-            </p>
-            <br>
-            <div style="display: flex; margin-left: 36px; ">
-                <ul class="ul1">
-                    <li>Problem Solving</li>
-                    <li>Time Management</li>
-                    <li>Planning</li>
-                </ul>
-                <ul class="ul1">
-                    <li>Attention to Detail</li>
-                    <li>Collaboration & Communication</li>
-                    <li>Multi-tasking</li>
-                </ul>
-            </div>
-            <br>
-            <br>
-
-            <style>
-                swiper-container {
-                  width: 100%;
-                  height: 100%;
-                }
-            
-                swiper-slide {
-                  text-align: center;
-                  font-size: 16px;
-                  margin-top: 8px;
-                  display: block;
-                  justify-content: center;
-                  align-items: center;
-                  color: rgb(177, 180, 206);
-                  padding: 6px 35px;
-                }
-            
-                swiper-slide img {
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                }
-              </style>
-            
-              <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
-                <swiper-slide> 
-                    <h3>Aecon Group Inc.</h3>
-                    <h4>Warehouse Associate</h4>
-                    <h4>Dec 2022 - Present</h4>
-                    <br>
-                    <p>
-                        Performed weekly cycle counts & managed inventory, worked with customers to have their needs 
-                        met, performed weekly team meetings to assist and guide coworkers, assisted with routing of 
-                        company vehicles, assisted with scheduling deliveries both domestic and international, 
-                        provided relief for picking, receiving and other warehouse duties
-                    </p>
-                    <div style="display: flex">
-                        <ul class="ul1">
-                            <li>Microsoft Excel</li>
-                            <li>Administration</li>
-                            <li>Customer Service</li>
-                        </ul>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <h3>Wood Wyantt</h3>
-                    <h4>Supervisor</h4>
-                    <h4>Aug 2022 - Dec 2022</h4>
-                    <br>
-                    <p>
-                        Performed weekly cycle counts & managed inventory, worked with customers to have their 
-                        needs met, performed weekly team meetings to assist and guide coworkers, 
-                        assisted with routing of company vehicles, assisted with scheduling deliveries both 
-                        domestic and international, provided relief for picking, receiving and other warehouse 
-                        duties
-                    </p>
-                    <div style="display: flex">
-                         <ul class="ul1">
-                            <li>Customer Service</li>
-                            <li>Planning</li>
-                            <li>Leadership</li>
-                        </ul>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <h3>Ingredients Plus Distribution</h3>
-                    <h4>Warehouse Associate</h4>
-                    <h4>Mar 2020 - Aug 2022</h4>
-                    <br>
-                    <p>
-                        Was responsible for picking orders in a timely manner while maintaining accuracy, 
-                        provided support to customers, operated a variety of machinery including but not 
-                        limited to cross-dock, reach-truck, forklift, and scissor lift, assisted with shipping and 
-                        receiving
-                    </p>
-                    <div style="display: flex">
-                         <ul class="ul1">
-                            <li>Inventory Management</li>
-                            <li>Shipping & Receiving</li>
-                            <li>Customer Service</li>
-                        </ul>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <h3>TransCold Distribution</h3>
-                    <h4>Shipper/receiver</h4>
-                    <h4>Mar 2026 - Dec 2020</h4>
-                    <br>
-                    <p>
-                        Ran a team of 4 workers to meet the needs of the warehouse, repaired and maintained
-                        warehouse racking, assisted management with administrative needs, organized pick ups
-                        and deliveries via company transport, picked orders, and was responsible for both 
-                        shipping and receiving
-                    </p>
-                    <div style="display: flex">
-                         <ul class="ul1">
-                            <li>Shipping & Receiving</li>
-                            <li>Inventory Management</li>
-                            <li>Reach truck operation</li>
-                        </ul>
-                    </div>
-                </swiper-slide>
-                <!--<swiper-slide>Slide 5</swiper-slide> -->
-              </swiper-container>
-
-
-              <div id="contact" class="card">
-                <div class="photo"></div>
-                <div class="banner"></div>
-                <ul>
-                    <li><b>Dustin Demers</b></li>
-                    <li>Web Developer</li>
-    
-                </ul>
-                <button class="contact" id="main-button">click to get in touch</button>
-
-                <form class="email-form" method="post" 
-                    action="https://formspree.io/f/xeqbqbzz"
-                    method="POST"
-                >
-                    <input id="name" type="text" placeholder="name" name="name" required>
-                    <input id="email" type="email" placeholder="email" name="email" required>
-                    <textarea id="comment" type="text" placeholder="comment" body="body text" name="message"></textarea>
-                    <button class="contact">send</button>
-              </form>
-              </div>
-            
-
-            
-              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-            
-
 
         </section>
-
-            </main>
-        <footer>
-            Dustin Demers 2023&#169;
-            <br>
-        created with HTML, CSS, and JS
-        </footer>
     </body>
 </html>
