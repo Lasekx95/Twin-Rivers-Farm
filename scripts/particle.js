@@ -47,8 +47,8 @@ class Particle {
 
 function setDimensions() {
     particles = [];
-    canvas.width = window.innerWidth * window.devicePixelRatio;
-    canvas.height = window.innerHeight * window.devicePixelRatio;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
     // CSS to make the canvas cover the entire viewport
     canvas.style.width = '100%';
@@ -59,7 +59,7 @@ function setDimensions() {
 
     // Adjust particle count based on screen dimensions
     //let particleTotal = 150;
-    let particleTotal = w <= 600 ? 200 : 150;
+    let particleTotal = h > w ? 60 : 150;
     
     if(canvas.width > 500 && canvas.height > 1000){
         ctx.lineWidth = 3; 
