@@ -103,12 +103,11 @@ li a:hover  {
 .desc {
     position: absolute;
     bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: block;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .desc p{
-    grid-column: 1 / span 3 ;
     font-size: 1.3rem;
 }
 
