@@ -34,9 +34,7 @@ class Particle {
                 ctx.beginPath();
                 ctx.moveTo(x, y);
                 ctx.lineTo(particles[i].coordinates.x, particles[i].coordinates.y);
-                
-                // Increase the line width for better visibility
-                ctx.lineWidth = 2; // You can adjust this value as needed
+
                 
                 ctx.stroke();
             }
@@ -61,6 +59,12 @@ function setDimensions() {
 
     // Adjust particle count based on screen dimensions
     let particleTotal = w > h ? (w > 1000 ? 150 : 100) : (h > 1000 ? 150 : 200);
+    
+    if(canvas.width > 500 && canvas.height > 1000){
+        ctx.lineWidth = 3; 
+    } else {
+        ctx.lineWidth = 1;
+    }
 
     for (let i = 0; i < particleTotal; i++) {
         let particle = new Particle();
