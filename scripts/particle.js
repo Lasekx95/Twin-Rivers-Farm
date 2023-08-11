@@ -58,7 +58,7 @@ function setDimensions() {
     let h = window.innerHeight;
 
     // Adjust particle count based on screen dimensions
-    let particleTotal = w > h ? (w > 1000 ? 150 : 100) : (h > 1000 ? 150 : 200);
+    let particleTotal = w > h ? (w > 1000 ? 150 : 150) : (h > 1000 ? 250 : 250);
     
     if(canvas.width > 500 && canvas.height > 1000){
         ctx.lineWidth = 3; 
