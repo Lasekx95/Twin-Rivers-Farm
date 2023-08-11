@@ -62,7 +62,7 @@ header {
 
 nav ul{
     display: flex;
-    width: 170px;
+    width: 165px;
     justify-content: space-between;
     font-size: 1.4rem;
 }
