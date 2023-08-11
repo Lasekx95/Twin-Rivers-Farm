@@ -51,12 +51,17 @@ function setDimensions() {
     canvas.style.height = '100%';
 
     let w = window.innerWidth;
-    let particleTotal = w > 1000 ? 150 : 100;
+    let h = window.innerHeight;
+
+    // Adjust particle count based on screen dimensions
+    let particleTotal = w > h ? (w > 1000 ? 150 : 100) : (h > 1000 ? 150 : 100);
+
     for (let i = 0; i < particleTotal; i++) {
         let particle = new Particle();
         particles.push(particle);
     }
 }
+
 
 // Call setDimensions when the window is resized
 window.addEventListener('resize', setDimensions);
