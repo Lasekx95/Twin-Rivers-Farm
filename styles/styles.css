@@ -179,7 +179,6 @@ li a:hover  {
 }
 
 .card_box{
-    position: fixed;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -189,7 +188,7 @@ li a:hover  {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    z-index: 2;
+    z-index: 99;
 }
 
 .card {
