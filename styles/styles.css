@@ -63,10 +63,14 @@ header {
 
 nav ul{
     display: flex;
-    width: 165px;
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
+
+li a{
+    padding-right: 10px;
+}
+
 
 li a:hover  {
     padding-bottom: 4px;
