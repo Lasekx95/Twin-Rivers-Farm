@@ -18,7 +18,7 @@ window.addEventListener('resize', setDimensions);
 function setup(){
     setTimeout(() =>{
         progressBar.style.height = '40%'
-    }, 1000)
+    }, 500)
 
     setTimeout(() =>{
         progressBar.style.height = '80%'
@@ -46,7 +46,7 @@ function percentageTracker() {
     }
 }
 
-//setup();
-//percentageTracker();
+setup();
+percentageTracker();
 setDimensions();
 animate();
