@@ -46,7 +46,8 @@ function percentageTracker() {
     }
 }
 
-setup();
-percentageTracker();
 setDimensions();
 animate();
+setup();
+percentageTracker();
+
